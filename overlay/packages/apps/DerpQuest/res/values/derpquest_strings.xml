@@ -13,6 +13,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <string name="maintainer_name">Bikram Mukherjee</string>
+     <string name="maintainer_name">Bikram Mukherjee</string>
+     <string name="maintainer_telegram">https://t.me/Bikram_M</string>
 
-</resources>
+ </resources>
