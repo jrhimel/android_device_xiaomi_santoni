@@ -512,6 +512,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
    WfdCommon
 
+#XiaomiAddon
+PRODUCT_PACKAGES += \
+    XiaomiAddon
+
 #XiaomiParts
 PRODUCT_PACKAGES += \
     XiaomiParts
