@@ -243,6 +243,29 @@ on boot
     # IR blaster
     chown root system /sys/class/leds/infrared/transmit
     chown root system /sys/class/leds/infrared/brightness  
+
+    # Audio
+    chown system system /sys/kernel/sound_control/headphone_gain
+    chown system system /sys/kernel/sound_control/mic_gain
+    chown system system /sys/kernel/sound_control/speaker_gain
+    chown system system /sys/kernel/sound_control/earpiece_gain
+    chown system system /sys/kernel/sound_control/speaker_gain
+    chmod 0660 /sys/kernel/sound_control/headphone_gain
+    chmod 0660 /sys/kernel/sound_control/mic_gain
+    chmod 0660 /sys/kernel/sound_control/speaker_gain
+    chmod 0660 /sys/kernel/sound_control/earpiece_gain
+    chmod 0660 /sys/kernel/sound_control/speaker_gain
+
+    # Torch
+    chown root system /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_0/max_brightness
+    chmod 0660 /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_0/max_brightness
+    chown root system /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness
+    chmod 0660 /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness
+    write /sys/devices/soc/qpnp-flash-led-25/leds/led:torch_1/max_brightness 0
+
+    # Backlight dimmer
+    chown system system /sys/module/mdss_fb/parameters/backlight_dimmer
+    chmod 0660 /sys/module/mdss_fb/parameters/backlight_dimmer
 	
     # USB Fastcharge
     chown system system /sys/kernel/fast_charge/force_fast_charge

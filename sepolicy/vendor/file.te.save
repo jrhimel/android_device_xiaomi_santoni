@@ -36,6 +36,10 @@ type sysfs_fcharge, sysfs_type, fs_type;
 type sysfs_msm_subsys, sysfs_type, fs_type;
 
 # XiaomiParts
+type kcal_dev, sysfs_type, fs_type;
 type sysfs_headgain, sysfs_type, fs_type;
 type sysfs_micgain, sysfs_type, fs_type;
 type sysfs_backlightdim, sysfs_type, fs_type;
+type sysfs_fpsinfo, sysfs_type, fs_type;
+type sysfs_torch, sysfs_type, fs_type;
+
