@@ -17,18 +17,20 @@
 $(call inherit-product, device/xiaomi/santoni/full_santoni.mk)
 
 # Inherit some common Corvus stuff.
-$(call inherit-product, vendor/du/config/common_full_phone.mk)
-$(call inherit-product, device/corvus/CorvusParts/corvusparts.mk)
+$(call inherit-product, vendor/komodo/config/common_full_phone.mk)
 
 PRODUCT_DEVICE := santoni
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4X
-PRODUCT_NAME := du_santoni
+PRODUCT_NAME := komodo_santoni
 BOARD_VENDOR := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 
-# Inherit build type
-DU_BUILD_TYPE := OFFICIAL
+# Gapps
+CURRENT_BUILD_TYPE := nogapps
+
+# OFFICIAL TAG
+KOMODO_OFFICIAL=true
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 720

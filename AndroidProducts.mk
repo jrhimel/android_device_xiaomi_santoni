@@ -1,7 +1,7 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/du_santoni.mk
+    $(LOCAL_DIR)/komodo_santoni.mk
 
 COMMON_LUNCH_CHOICES := \
-    du_santoni-userdebug \
-    du_santoni-user \
-    du_santoni-eng
+    komodo_santoni-userdebug \
+    komodo_santoni-user \
+    komodo_santoni-eng
