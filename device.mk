@@ -231,8 +231,9 @@ PRODUCT_PACKAGES += \
 
 # FM
 PRODUCT_PACKAGES += \
-    FMRadio \
-    libfmjni
+    FM2 \
+    libqcomfm_jni \
+    qcom.fmradio
 
 # fwk-detect
 PRODUCT_PACKAGES += \
@@ -516,10 +517,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
    WfdCommon
 
-PRODUCT_BOOT_JARS += \
-   QPerformance \
-   UxPerformance
-
 #XiaomiAddon
 PRODUCT_PACKAGES += \
     XiaomiAddon
@@ -527,3 +524,4 @@ PRODUCT_PACKAGES += \
 #XiaomiParts
 PRODUCT_PACKAGES += \
     XiaomiParts
+
