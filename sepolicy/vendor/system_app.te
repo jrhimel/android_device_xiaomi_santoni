@@ -11,4 +11,15 @@ allow system_app sysfs_vibrator:file { getattr open read write };
 allow system_app persist_camera_prop:file { open read };
 allow system_app fm_prop:property_service set;
 allow system_app hal_rcsservice:binder { call transfer };
-get_prop(system_app, fm_prop)
+get_prop(system_app, fm_prop) 
+
+#XiaomiParts
+allow system_app sysfs_headgain:dir search;
+allow system_app sysfs_headgain:file rw_file_perms;
+allow system_app sysfs_micgain:dir search;
+allow system_app sysfs_micgain:file rw_file_perms;
+allow system_app sysfs_speakergain:dir search;
+allow system_app sysfs_speakergain:file rw_file_perms;
+allow system_app sysfs_fpsinfo:file rw_file_perms;
+allow system_app sysfs_fpsinfo:dir search;
+allow system_app sysfs_leds:dir search;
