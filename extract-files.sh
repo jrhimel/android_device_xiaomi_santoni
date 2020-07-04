@@ -34,7 +34,7 @@ if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
 AOSP_ROOT="${MY_DIR}/../../.."
 
-HELPER="$AOSP_ROOT"/vendor/aosip/build/tools/extract_utils.sh"
+HELPER="$AOSP_ROOT"/vendor/xtended/build/tools/extract_utils.sh"
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -79,7 +79,7 @@ extract "${MY_DIR}"/proprietary-files-qc.txt "$SRC" \
 	"${KANG}" --section "${SECTION}"
 
 # Hax for cam configs
-CAMERA2_SENSOR_MODULES="${AOSP_ROOT}"/vendor/"${VENDOR}"/"${DEVICE}"/proprietary/vendor/lib/libmmcamera2_sensor_modules.so
-sed -i "s|/system/etc/camera/|/vendor/etc/camera/|g" "${CAMERA2_SENSOR_MODULES}"
+CAMERA2_SENSOR_MOxtendedLES="${AOSP_ROOT}"/vendor/"${VENDOR}"/"${DEVICE}"/proprietary/vendor/lib/libmmcamera2_sensor_moxtendedles.so
+sed -i "s|/system/etc/camera/|/vendor/etc/camera/|g" "${CAMERA2_SENSOR_MOxtendedLES}"
 
 "${MY_DIR}"/setup-makefiles.sh

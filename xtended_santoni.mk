@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 The Havoc-OS Project
+# Copyright (C) 2019 The Xtended Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,32 +16,23 @@
 
 $(call inherit-product, device/xiaomi/santoni/full_santoni.mk)
 
-# Inherit some common Revenge OS stuff.
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+# Inherit some common Xtended stuff.
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 
 PRODUCT_DEVICE := santoni
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi 4X
-PRODUCT_NAME := derp_santoni
+PRODUCT_MODEL := Redmi 4
+PRODUCT_NAME := xtended_santoni
 BOARD_VENDOR := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 
-# Official
-DERP_BUILDTYPE=Official
-
-#Updater json
-FORCE_JSON=1
+#Maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.xtended.maintainer=ZHANtech
 
 # Boot animation
-TARGET_BOOT_ANIMATION_RES := 1080
-
-#GApps
-DERP_BUILD_ZIP_TYPE := GAPPS
-export TEMPORARY_DISABLE_PATH_RESTRICTIONS=true
-IS_PHONE := true
-TARGET_GAPPS_ARCH := arm64
-TARGET_MINIMAL_APPS := true
-
+TARGET_BOOT_ANIMATION_RES := 720
+	
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
