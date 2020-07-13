@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2020 The LineageOS Project
+<!-- Copyright (C) 2018 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -18,13 +18,25 @@
 
     <PreferenceCategory
         android:key="vibration"
-        android:title="@string/vibration_title">
+        android:title="@string/category_vibrator">
 
         <com.xiaomi.addon.preferences.VibratorStrengthPreference
-            android:defaultValue="80"
-            android:key="vibration_strength"
+            android:key="vib_strength"
             android:icon="@drawable/ic_vibrate"
-            android:title="@string/vibration_strength_title" />
+            android:title="@string/vib_strength_title_head"
+            android:summary="@string/vib_strength_summary_head" />
+
+        <com.xiaomi.addon.preferences.VibratorCallStrengthPreference
+            android:key="vib_call_strength"
+            android:icon="@drawable/ic_call"
+            android:title="@string/vib_call_strength_title_head"
+            android:summary="@string/vib_call_strength_summary_head" />
+
+        <com.xiaomi.addon.preferences.VibratorNotifStrengthPreference
+            android:key="vib_notif_strength"
+            android:icon="@drawable/ic_notif"
+            android:title="@string/vib_notif_strength_title_head"
+            android:summary="@string/vib_notif_strength_summary_head" />
 
     </PreferenceCategory>
 
@@ -72,8 +84,5 @@
             android:icon="@drawable/ic_usb_fastcharge"
             android:summary="@string/fastcharge_summary" />
     </PreferenceCategory>
-	
-	<PreferenceCategory
-		android:title="" />
-		
+
 </PreferenceScreen>

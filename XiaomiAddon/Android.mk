@@ -15,9 +15,9 @@ LOCAL_USE_AAPT2 := true
 
 package_resource_overlays := $(strip \
     $(wildcard $(foreach dir, $(PRODUCT_PACKAGE_OVERLAYS), \
-      $(addprefix $(dir)/, packages/apps/ZenParts/res))) \
+      $(addprefix $(dir)/, packages/apps/XiaomiAddon/res))) \
     $(wildcard $(foreach dir, $(DEVICE_PACKAGE_OVERLAYS), \
-      $(addprefix $(dir)/, packages/apps/ZenParts/res))))
+      $(addprefix $(dir)/, packages/apps/XiaomiAddon/res))))
 
 LOCAL_RESOURCE_DIR := $(package_resource_overlays) $(LOCAL_RESOURCE_DIR)
 

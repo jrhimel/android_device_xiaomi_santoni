@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2020 The LineageOS Project
+<!-- Copyright (C) 2018 The LineageOS Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -26,8 +26,7 @@
         <item>2</item>
         <item>3</item>
     </string-array>
-
-
+    
     <!-- kcal -->
     <array name="preset_enteries">
         <item>@string/preset_default</item>
