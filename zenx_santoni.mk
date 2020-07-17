@@ -17,21 +17,17 @@
 $(call inherit-product, device/xiaomi/santoni/full_santoni.mk)
 
 # Inherit some common Xtended stuff.
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+$(call inherit-product, vendor/zenx/config/common_full_phone.mk)
 
 PRODUCT_DEVICE := santoni
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 4
-PRODUCT_NAME := xtended_santoni
+PRODUCT_NAME := zenx_santoni
 BOARD_VENDOR := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 
 # Xtension
-XTENDED_BUILD_TYPE := OFFICIAL
-
-#Maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.xtended.maintainer=STARGAZER
+ZENX_BUILD_TYPE := ZHANtech
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 720
