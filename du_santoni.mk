@@ -29,6 +29,9 @@ PRODUCT_MANUFACTURER := Xiaomi
 # Inherit build type
 DU_BUILD_TYPE := OFFICIAL
 
+# gapps
+USE_GAPPS := true
+
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 720
 
