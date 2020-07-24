@@ -75,9 +75,6 @@
 /sys/class/timed_output/vibrator/vmax_mv            u:object_r:sysfs_vibrator:s0
 /sys/class/timed_output/vibrator/vtg_level           u:object_r:sysfs_vibrator:s0
 
-# Power
-/(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.1-service\.custom     u:object_r:hal_power_default_exec:s0
-
 # XiaomiParts
 /sys/kernel/sound_control/headphone_gain                     u:object_r:sysfs_headgain:s0
 /sys/kernel/sound_control/mic_gain                           u:object_r:sysfs_micgain:s0
