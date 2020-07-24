@@ -519,6 +519,11 @@ PRODUCT_BOOT_JARS += \
    QPerformance \
    UxPerformance
 
+#XiaomiParts
+PRODUCT_PACKAGES += \
+    XiaomiParts \
+    XiaomiAddon
+
 # GCam Go
 PRODUCT_PACKAGES += \
     GCam
